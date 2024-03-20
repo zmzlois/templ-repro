@@ -1,0 +1,17 @@
+
+package edit 
+
+templ EditLinkForm() {
+	<form hx-post="/create" class="flex flex-col space-y-4 w-1/2">
+		<input type="text" name="title" placeholder="Title" class="rounded-sm"/>
+		<input
+			type="text"
+			name="url"
+			id="url"
+			placeholder="URL"
+			pattern="(https?|ftp):\\/\\/[^0-9a-zA-Z\\s/$.?#].[^a-z\\s]*"
+			class="rounded-sm"
+		/>
+		<div class="flex justify-between"></div>
+	</form>
+}

@@ -1,0 +1,21 @@
+package main
+
+
+templ IncorrectForm() {
+        <form hx-post="/create" class="flex flex-col space-y-4 w-1/2">
+        <input
+            type="text"
+            name="title"
+            placeholder="Title"
+            class="rounded-sm"
+        />
+        <input
+            type="text"
+            name="url"
+            id="url"
+            placeholder="URL"
+            class="rounded-sm"
+            pattern="(https?|ftp):\/\/[^\s/$.?#].[^\s]*"
+        />
+        <span id="url-valid" class="text-red-500"></span>
+  }
