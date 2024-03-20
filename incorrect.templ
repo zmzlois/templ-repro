@@ -15,7 +15,7 @@ templ IncorrectForm() {
             id="url"
             placeholder="URL"
             class="rounded-sm"
-            pattern="(https?|ftp):\/\/[^\s/$.?#].[^\s]*"
+            pattern="/^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/i"
         />
         <span id="url-valid" class="text-red-500"></span>
   }
